@@ -5,12 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "sass": "sass --style=compressed -w scss:styles"
+    "sass": "sass --style=compressed -w scss:styles",
+    "eslint": "eslint ./src",
+    "eslint-fix": "eslint ./src --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
     "sass": "^1.49.0"
   },
   "dependencies": {}
