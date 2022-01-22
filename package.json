@@ -5,12 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "sass": "sass --style=compressed --no-source-map -w scss:styles"
+    "sass": "sass --style=compressed -w scss:styles"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.49.0"
-  }
+  },
+  "dependencies": {}
 }
