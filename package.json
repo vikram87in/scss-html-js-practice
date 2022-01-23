@@ -7,7 +7,8 @@
   "scripts": {
     "sass": "sass --style=compressed -w scss:styles",
     "eslint": "eslint ./src",
-    "eslint-fix": "eslint ./src --fix"
+    "eslint-fix": "eslint ./src --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "prettier": "2.5.1",
-    "sass": "^1.49.0"
+    "sass": "^1.49.0",
+    "husky": "^7.0.0"
   },
   "dependencies": {}
 }
