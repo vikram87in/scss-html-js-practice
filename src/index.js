@@ -1,3 +1,2 @@
-function fun(a) {
-  console.log(a);
-}
+const x = 'x';
+console.log(x);
