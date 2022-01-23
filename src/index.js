@@ -1,3 +1,5 @@
-const x = 'x';
 // eslint-disable-next-line no-console
-console.log(x);
+console.log('hi');
+// import { NAME as name } from './index2';
+// import * as mod from './indexImpExp';
+// console.log(name);
