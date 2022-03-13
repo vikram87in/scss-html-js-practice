@@ -22,7 +22,7 @@
       "windows"
     ],
     "no-console": [
-      "warning"
+      "warn"
     ]
   }
 }
