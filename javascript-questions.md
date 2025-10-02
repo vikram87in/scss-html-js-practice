@@ -1,13 +1,47 @@
 # this
 
 <details>
-<summary>toggle</summary>
+<summary> -> </summary>
 <br>
 
 `BASIC` **Q: What does the this keyword refer to in JavaScript?**
 <details>
 <summary>Click to see Answer</summary>
-It refers to the execution context's receiver — basically “what object is currently owning the execution.” It is determined by how a function is called, not where it's defined (with the important exception of arrow functions, which capture this lexically).
+'this' refers to the object that is the current execution context, and its value depends on how the function is called.
+
+<br>
+
+**Rules:**
+
+- Default (global)
+
+  - Non-strict: this = global object (window / global)
+
+  - Strict: this = undefined
+
+- Implicit binding (obj.method())
+
+  - this = object before the dot
+
+- Explicit binding (call, apply, bind)
+
+  - this = explicitly provided object
+
+- Constructor / class (new keyword)
+
+  - this = newly created object
+
+- Arrow functions
+
+  - this = lexical scope (inherited from surrounding code)
+
+- Event listeners
+
+  - Normal function: this = element
+
+  - Arrow function: this = outer scope
+
+👉 In short: this is determined at call-time (except arrow functions, which capture it lexically).
 </details>
 <br>
 
@@ -18,9 +52,9 @@ It refers to the execution context's receiver — basically “what object is cu
 <details>
 <summary>Click to see Answer</summary>
 
-* Normal functions: this is dynamic — set by call site (method call, plain call, call/apply/bind, new).
+* Normal functions: 'this' is dynamic — set by call site (method call, plain call, call/apply/bind, new).
 
-* Arrow functions: this is lexical — inherited from the surrounding (defining) scope and cannot be changed with call, apply, or bind.
+* Arrow functions: 'this' is lexical — inherited from the surrounding (defining) scope and cannot be changed with call, apply, or bind.
 
 **Implication:** Arrow functions are great for callbacks when you want the outer this, but not for object methods that require their own this.
 </details>
@@ -33,7 +67,7 @@ It refers to the execution context's receiver — basically “what object is cu
 <details>
 <summary>Click to see Answer</summary>
 
-All three set this explicitly:
+All three set 'this' explicitly:
 
 - func.call(thisArg, arg1, arg2, ...) — invoke immediately with arguments listed.
 
